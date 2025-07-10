@@ -6,7 +6,7 @@ public class VideoLauncher {
 		Scanner sc = new Scanner(System.in);
 		VideoStore vs = new VideoStore();
 		while (true) {
-			System.out.println(); 
+			System.out.println();
 			System.out.println("MAIN MENU");
 			System.out.println("=========");
 			System.out.println("1.Add Videos : ");
@@ -42,7 +42,7 @@ public class VideoLauncher {
 				String name3 = sc.nextLine();
 				System.out.print("Enter the rating for this video:");
 				int rating = sc.nextInt();
-				vs.receiveRating(name3,rating);
+				vs.receiveRating(name3, rating);
 				break;
 			case 5:
 				vs.listInventory();
@@ -54,7 +54,7 @@ public class VideoLauncher {
 				System.out.println("Invalid choice.");
 				System.out.println("Please enter the number between 1-6.");
 			}
-			
+
 		}
 
 	}
@@ -148,16 +148,16 @@ class VideoStore {
 	void listInventory() {
 		System.out.println("------------------------------------------------------");
 //		System.out.println("Video Name" + "\t|\tCheckout Status" + "\t|\tRating");
-		 System.out.printf("%-20s | %-16s | %-6s\n", "Video Name", "Checkout Status", "Rating");
-		for(int i=0;i<count;i++) {
+		System.out.printf("%-20s | %-16s | %-6s\n", "Video Name", "Checkout Status", "Rating");
+		for (int i = 0; i < count; i++) {
 			String name = store[i].getName();
 			boolean status = store[i].getCheckout();
 			int rating = store[i].getRating();
 //			System.out.println(name + "\t\t|\t\t" +  status + "\t\t|\t\t" + rating);
-	        System.out.printf("%-20s | %-16s | %-6d\n", name, status, rating);
+			System.out.printf("%-20s | %-16s | %-6d\n", name, status, rating);
 
 		}
-		
+
 		System.out.println("------------------------------------------------------");
 	}
 }
