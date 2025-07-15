@@ -3,9 +3,10 @@ package method_Reference;
 public class Question1 {
 
 	public static void main(String[] args) {
-		Fact fact = new Fact();
-		int n = 6;
-		System.out.println("Factorial of " + n  + " is " + fact.factorialFun(n));
+		Fact ff = new Fact();
+		int n = 5;
+		Factorial fact = ff::factorialFun;
+		System.out.println("Facorial of " + n + " is: " + fact.factorialFun(n));
 
 	}
 
@@ -13,7 +14,7 @@ public class Question1 {
 
 @FunctionalInterface
 interface Factorial {
-	int factorial(int n);
+	int factorialFun(int n);
 }
 
 class Fact {
