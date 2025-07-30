@@ -3,9 +3,9 @@ import java.sql.*;
 public class JbdcConnection2 {
 
 	public static void main(String[] args) {
-		String url = "jdbc:oracle:thin:@//LAPTOP-PCIS0HGG:1521/XE";
-		String username = "system";
-		String password = "SaiAdmin15";
+		String url = "your url";
+		String username = "your username";
+		String password = "your password";
 		try {
 //			Class.forName("oracle.jdbc.driver.OracleDriver");
 			Connection con = DriverManager.getConnection(url,username,password);

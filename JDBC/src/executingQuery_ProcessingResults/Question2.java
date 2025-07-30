@@ -3,9 +3,9 @@ import java.sql.*;
 public class Question2 {
 
 	public static void main(String[] args) {
-		String url = "jdbc:oracle:thin:@//LAPTOP-PCIS0HGG:1521/XE";
-		String username = "system";
-		String password = "SaiAdmin15";
+		String url = "your url";
+		String username = "your username";
+		String password = "your password";
 		try {
 			Connection con = DriverManager.getConnection(url,username,password);
 			Statement stmt = con.createStatement();
