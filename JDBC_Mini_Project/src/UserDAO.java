@@ -4,9 +4,9 @@ import java.sql.*;
 public class UserDAO {
 
 	public Connection getConnection() throws SQLException {
-		String url = "jdbc:oracle:thin:@//LAPTOP-PCIS0HGG:1521/XE";
-		String username = "system";
-		String password = "SaiAdmin15";
+		String url = "your url";
+		String username = "your username";
+		String password = "your password";
 		return DriverManager.getConnection(url, username, password);
 	}
 
